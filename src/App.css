@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fjalla One', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: url(./Components/Images/fondo.gif);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
   align-items: center;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  place-items: center;
+  height: 8vh;
+  width: 100%;
+  background-color: #fff;
+}
+
+.scrolled-down {
+  height: 5vh;
+  background-color: #d9ad26;
+}
+
+.logo {
+  height: 40px;
+  margin-left: 80px;
+  cursor: pointer;
+}
+
+.header-image {
+  width: 150px;
+  height: 20px;
+  margin-left: 160px;
+  cursor: pointer;
+}
+
+nav {
+  margin-right: 70px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 20px;
+  margin: 10px;
+}
+
+nav ul li a {
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+}
+
+.character-image, .films-image, .planets-image {
+  height: 30vh;
+  border-radius: 40px;
+}
+
+.info-character, .info-films, .info-planets {
+  display: grid;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
+  font-size: 40px;
+  margin-left: 22%;
+  margin-right: 25%;
+  padding-top: 130px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+section {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+  width: 80%;
+  height: 60vh;
+  margin: 0 10%;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.character-list, .films-list, .planet-list {
+  margin: 55px;
+  border: 2px solid black;
+  border-radius: 45px;
+  background-color: #fff;
+  height: 45vh;
+  width: 30vw;
+  font-weight: bold;
+}
+
+.character-list p, .films-list p, .planet-list p {
+  font-family: 'Fjalla One', sans-serif;
+  margin-top: 15px;
 }
